@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main {
+  @apply flex flex-col w-full h-full items-center overflow-auto grow px-5 sm:px-10 md:px-16;
+  background-color: #fbfcfa;
+}
+
+.custom-container {
+  @apply flex grow flex-col w-full h-full items-center mb-20 mt-16;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
