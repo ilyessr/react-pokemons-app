@@ -35,7 +35,7 @@ npm install
 To launch the application in development mode:
 
 ```bash
-npm start
+npm run start
 ```
 
 ## Authentication
