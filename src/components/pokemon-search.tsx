@@ -1,5 +1,4 @@
 import React, { FunctionComponent, useState } from "react";
-import { Link } from "react-router-dom";
 import Pokemon from "../models/pokemon";
 import { getPokemons } from "../services/pokemonService";
 

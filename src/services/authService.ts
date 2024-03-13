@@ -1,5 +1,5 @@
 import axios from "axios";
-import { jwtDecode } from 'jwt-decode';
+import { jwtDecode } from "jwt-decode";
 
 export const login = async (
   username: string,
@@ -32,7 +32,7 @@ export const isAuthenticated = (): boolean => {
       const decodedToken = jwtDecode(token);
       const currentTime = Date.now() / 1000;
 
-      if (decodedToken .exp && decodedToken.exp > currentTime) {
+      if (decodedToken.exp && decodedToken.exp > currentTime) {
         return true;
       }
     } catch (error) {

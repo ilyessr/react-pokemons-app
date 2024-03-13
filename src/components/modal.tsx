@@ -26,7 +26,7 @@ const Modal: FunctionComponent<Props> = ({ isVisible, onClose, children }) => {
         return () => {
             document.removeEventListener('mousedown', handleOutsideClick);
         };
-    }, [isVisible, onClose]);
+    }, [isVisible, onClose, handleOutsideClick]);
 
     if (!isVisible) return null;
 
