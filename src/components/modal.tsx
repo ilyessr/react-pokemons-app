@@ -10,14 +10,17 @@ interface Props {
 const Modal: FunctionComponent<Props> = ({ isVisible, onClose, children }) => {
     const modalRef = useRef<HTMLDivElement>(null);
 
-    const handleOutsideClick = (event: MouseEvent) => {
-        const clickedElement = event.target as Node
-        if (modalRef.current && !modalRef.current.contains(clickedElement)) {
-            onClose();
-        }
-    };
-
     useEffect(() => {
+
+
+        const handleOutsideClick = (event: MouseEvent) => {
+            const clickedElement = event.target as Node
+            if (modalRef.current && !modalRef.current.contains(clickedElement)) {
+                onClose();
+            }
+        };
+
+
         if (isVisible) {
             document.addEventListener('mousedown', handleOutsideClick);
         } else {
@@ -26,7 +29,7 @@ const Modal: FunctionComponent<Props> = ({ isVisible, onClose, children }) => {
         return () => {
             document.removeEventListener('mousedown', handleOutsideClick);
         };
-    }, [isVisible, onClose, handleOutsideClick]);
+    }, [isVisible, onClose]);
 
     if (!isVisible) return null;
 
