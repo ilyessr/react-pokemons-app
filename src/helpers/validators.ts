@@ -5,15 +5,14 @@ import { PokemonType } from "../types/types";
 
 export const validateUrl = (url: string): boolean => {
   const regex =
-    /^https:\/\/assets\.pokemon\.com\/assets\/cms2\/img\/pokedex\/detail\/(\d+)\.png$/;
+    /^https:\/\/assets\.pokemon\.com\/assets\/cms2\/img\/pokedex\/detail\/(\d{3})\.png$/;
   const match = url.match(regex);
 
   if (!match) {
     return false;
   }
 
-  const dexNumber = parseInt(match[1], 10);
-  return dexNumber >= 1 && dexNumber <= 1025;
+  return true;
 };
 
 export const validateName = (name: string): boolean => {

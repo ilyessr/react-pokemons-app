@@ -106,8 +106,19 @@ const useFormValidation = (
         }
         onFormSubmitSuccess();
       } catch (error) {
-        console.error("Erreur lors de la soumission du formulaire:", error);
-        setServerError("Erreur lors de la soumission du formulaire");
+        let errorMessage = "Erreur lors de la soumission du formulaire";
+        if (error instanceof Error) {
+          try {
+            const errorObject = JSON.parse(error.message);
+            if (errorObject.message) {
+              errorMessage = errorObject.message;
+              setServerError(errorMessage);
+            }
+          } catch (parseError) {
+            errorMessage = error.message;
+            setServerError(errorMessage);
+          }
+        }
       }
     }
   };
