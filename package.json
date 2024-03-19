@@ -4,7 +4,7 @@
   "description": "An awesome application to handle some pokemons.",
   "scripts": {
     "dev": "react-scripts start",
-    "start": "serve -s build",
+    "start": "npx serve -s build",
     "build": "react-scripts build"
   },
   "eslintConfig": {
