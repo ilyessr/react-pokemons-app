@@ -2,7 +2,11 @@
 
 ## Description
 
-The React Pokédex App is an interactive web application designed for Pokémon enthusiasts. Using React, Redux, and TailwindCSS, this app provides a responsive interface allowing users to add, update, filter, and delete Pokémon. It also includes a secure login page for a personalized user experience.
+The React Pokédex App is an interactive web application designed for Pokémon enthusiasts. Using React and TailwindCSS, this app provides a responsive interface allowing users to add, update, filter, and delete Pokémon. It also includes a secure login page for a personalized user experience.
+
+You can visit the live version of the app [here](https://react-pokemons-app-production.up.railway.app/).
+
+Additionally, the backend of this application is powered by Node.js. You can find the source code for the backend on [GitHub](https://github.com/ilyessr/node-pokemon-api).
 
 ## Features
 

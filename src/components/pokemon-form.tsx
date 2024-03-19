@@ -178,7 +178,7 @@ const PokemonForm: React.FC<{
                 <div className="grid grid-cols-2 gap-2">
                   {AllPokemonTypes.map((type, index) => (
                     <div key={type}>
-                      <label className="mb-2 flex items-center">
+                      <label className="mb-2 flex items-center cursor-pointer">
                         <input
                           id={type}
                           type="checkbox"

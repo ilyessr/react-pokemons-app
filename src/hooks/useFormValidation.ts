@@ -55,7 +55,8 @@ const useFormValidation = (
       name: "Le nom doit uniquement contenir des lettres et des espaces, et être long de 3 à 25 caractères.",
       hp: "Les points de vie doivent être un nombre entre 0 et 999.",
       cp: "Les dégâts doivent être un nombre entre 0 et 99.",
-      types: "Sélectionnez entre 1 et 3 types parmi les types spécifiés.",
+      types:
+        "L'URL fournie ne correspond pas au schéma attendu pour les images Pokémon.",
     };
 
     const value = currentForm[fieldName].value;
