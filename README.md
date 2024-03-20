@@ -6,7 +6,7 @@ The React Pokédex App is an interactive web application designed for Pokémon e
 
 You can visit the live version of the app [here](https://react-pokemons-app-production.up.railway.app/).
 
-Additionally, the backend of this application is powered by Node.js. You can find the source code for the backend on [GitHub](https://github.com/ilyessr/node-pokemon-api).
+Additionally, the backend of this application is powered by Node.js. You can find the source code for the backend on [GitHub](https://github.com/ilyessr/node-pokemon-api). (username : pikachu, password: pikachu)
 
 ## Features
 
